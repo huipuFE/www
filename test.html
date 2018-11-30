@@ -1,0 +1,1382 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html> <!--<![endif]-->
+<head>
+  <link rel="shortcut icon" type="images/x-icon" href="//edusoho-global.qiqiuyun.net/favicon.ico?v3.20.33">
+  <meta charset="utf-8">
+  <meta property="wb:webmaster" content="c1c3bebc4db41d4e" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+ <meta name="360-site-verification" content="4080ad52c8ef82b5b2e76f0bc4ccb535" />
+  <title>在线网校系统|在线教育/教育云/在线教育解决方案-助您轻松实现_互联网+教育-在线教育学习平台-EduSoho开源网络课堂官网
+</title>
+  <meta name="keywords" content="网络课堂,搭建网校,创建网校,网校系统,网校搭建,题库系统,培训系统,慕课系统,MOOC系统,网校平台,在线教育,题库解决方案,远程教学软件,教学建站系统,网校开发,在线教育平台搭建." />
+  <meta name="description" content="EduSoho开源网络课堂是专业安全的网校系统，阔知网络科技在线教育机构团队成员多年开发经验。其教育培训系统软件，一站式在线学习辅导解决方案，按需购买，自由扩容。在线教育学习平台排名有哪些？在线学习直播系统，e-learning系统，lms软件，网校开发，网校建设，网校搭建就选EduSoho。
+" />
+  <meta content="93522d52a31019ed1d3b90757d0bd236a033a8c5" name="csrf-token" />
+    <link rel="stylesheet" href="//edusoho-global.qiqiuyun.net/libs/swiper/3.3.1/swiper-3.3.1.min.css?v3.20.33">
+      <link rel="stylesheet" href="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/css/bootstrap.css?v3.20.33">
+    <link rel="stylesheet" href="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/css/es-icon.css?v3.20.33">
+    <link rel="stylesheet" type="text/css" href="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/css/iconfont.css?v3.20.33">
+    <link rel="stylesheet" type="text/css" href="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/fonts/iconfont-arr.css?v3.20.33">
+    <link rel="stylesheet" type="text/css" href="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/fonts/common/iconfont-sidebar.css?v3.20.33">
+    <link rel="stylesheet" href="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/css/main.css?v3.20.33">
+  
+  </style>
+
+    <!--[if lt IE 9]>
+    <script src="../web/libs/bootstrap/3.0.0/html5shiv.js"></script>
+  <![endif]-->
+
+  <!--[if IE 8]>
+    <script src="../web/libs/bootstrap/3.0.0/respond.min.js"></script>
+  <![endif]-->
+  <!-- START HEAD STAT CODE (重要：请勿遗漏、修改、移除此行代码，以及以下代码，以下代码通过模板自动生成！) 2018-11-16 10:23 -->
+<script type="text/javascript">
+    var _mkt = { _visitorFields: {}, _chatManager: null };
+    _mkt.setVisitorField = function(key, value) {
+    this._visitorFields[key] = value;
+    if (this._chatManager) {
+        this._chatManager.set("customerFields", this.getFieldsForChat());
+        this._chatManager.set("userinfo", { partnerId: this.getVisitorId()});
+    }
+    };
+    _mkt.getVisitorFields = function() {
+    return this._visitorFields;
+    };
+    _mkt.getVisitorId = function() {
+        return this._visitorFields.visitorId ? this._visitorFields.visitorId : '';
+    },
+    _mkt.setChatManager = function(chatManager) {
+    this._chatManager = chatManager;
+    if (this._visitorFields.visitorId) {
+        this._chatManager.set("customerFields", this.getFieldsForChat());
+        this._chatManager.set("userinfo", { partnerId: this.getVisitorId()});
+    }
+    };
+    _mkt.getFieldsForChat = function() {
+    var fields = {};
+    fields.customField2 = this._visitorFields.visitorId ? this._visitorFields.visitorId : "";
+    return JSON.stringify(fields);
+    };
+
+    var _paq = _paq || [];
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setDomains", ["*.edusoho.com","*.esspoc.com","*.haomuke.com","*.qiqiuyu.com"]]);
+    _paq.push(["enableCrossDomainLinking"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    _paq.push(['enableHeartBeatTimer', 15]);
+    _paq.push([ function() {
+        _mkt.setVisitorField('visitorId', this.getVisitorId());
+        window._VISITOR_ID = this.getVisitorId();
+    }]);
+    (function() {
+    var u="//stat.edusoho.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- END HEAD STAT CODE (重要：请勿遗漏、修改、移除此行代码！) --></head>
+
+<body   >
+  <input type="hidden" value="0" id="promotion-view-id">
+  <input type="hidden" value="[]" id="promotion-sources">
+  <input type="hidden" value="" id="promotion-ip-address">
+  <input type="hidden" value="" id="promotion-uri">
+  <input type="hidden" value="0" id="promotion-visit-time">
+        <div class="sidebar-container js-sidebar-container">
+  <div class="sidebar-nav-wrapper">
+    <ul class="sidebar-nav js-sidebar-nav">
+      <li class="js-sidebar-item active">
+  <a href="/"><i class="mrm color-primary iconfont icon-shouyeshouye"></i>首页</a>
+</li>
+
+<li class="js-sidebar-item   ">
+      <a href="javascript:;"><i class="mrm color-primary iconfont icon-chanpin-copy"></i>全部产品<i class="glyphicon glyphicon-menu-down"></i></a>
+    <ul class="submenu">
+      <li><a href="/product/system">ES 通用版</a></li>
+      <li><a href="http://ct.edusoho.com/" target="_blank">ES 企培版</a></li><!-- TODO -->
+      <li><a href="/product/colleges">ES 高校版</a></li>
+      <li class="divider"></li>
+      <li><a href="/product/open-cloud">ES 教育云</a></li>
+      <li><a href="/product/saas">SaaS 服务</a></li>
+      <li><a href="/product/operation">网校运营</a></li>
+      <li class="divider"></li>
+            <li><a href="/crm/index">ES CRM 系统</a></li>
+    </ul>
+  </li>
+<li class="js-sidebar-item ">
+  <a href="/cases"><i class="mrm color-primary iconfont icon-xuexiao3"></i>成功网校</a>
+</li>
+<li class="js-sidebar-item ">
+  <a href="/solutions/saas"><i class="mrm color-primary iconfont icon-qian1"></i>服务报价</a>
+</li>
+
+<li class="js-sidebar-item hidden-xs">
+  <a href="/open/show">开源下载</a>
+</li>
+
+<li class="js-sidebar-item hidden-xs">
+  <a href="http://demo.edusoho.com/" target="_blank" class="seo-keyword-status" data-behavior="demo">演示站</a>
+</li>
+
+<li class="js-sidebar-item   visible-xs hidden-sm">
+      <a href="/info"><i class="mrm color-primary iconfont icon-xinwen1"></i>新闻资讯</a>
+                              </li>
+<li class="js-sidebar-item  visible-xs hidden-sm">
+  <a href="/theme_display"><i class="mrm color-primary iconfont icon-pifu"></i>网校主题</a>
+</li>
+<li class="js-sidebar-item ">
+      <a href="javascript:;"><i class="mrm color-primary iconfont icon-guanyuwomen"></i>关于我们<i class="glyphicon glyphicon-menu-down"></i></a>
+    <ul class="submenu">
+      <li><a href="/abouts/company">公司简介</a></li>
+      <li><a href="/abouts/culture">公司文化</a></li>
+
+      <li><a href="/news/center">新闻中心</a></li>
+      <li><a href="/abouts/progress">发展历程</a></li>
+      <li><a href="/abouts/connect">联系我们</a></li>
+
+      <li><a href="/abouts/joinus">加入我们</a></li>
+    </ul>
+  
+              </li>
+    </ul>
+  </div>
+</div>  
+            <div class="quick-bar hidden-xs js-quick-bar">
+	<ul>
+	  <li><a id="py-build" href="/probation/mobile" target="_blank" class="seo-keyword-status" data-behavior="trial"><i class="iconfont-sidebar icon-side-xuexiao6 off-text"></i><span class="text-overflow on-text fire">网校试用</span></a></li>
+	  	    <li><a id="py-now-consult"  class="js-consult-btn seo-keyword-status" data-behavior="consult" href="javascript:;"><i class="iconfont-sidebar icon-side-zixun2 off-text"></i><span class="text-overflow on-text">立即咨询</span></a></li>
+	  	  	  <li class="es-free-download"><a id="py-download" href="/open/show"><i class="iconfont-sidebar icon-side-ordinarydownload-copy off-text"></i><span class="text-overflow on-text">开源下载</span></a></li>
+			  	<li><a id="py-demo" href="http://demo.edusoho.com/" target="_blank" class="seo-keyword-status last" data-behavior="demo"><i class="iconfont-sidebar icon-side-diannao1 off-text"></i><span class="text-overflow on-text fire">演示站</span></a></li>
+				<li class="es-mobile-sideitem"><a id="py-evaluating" href="javascript:;" target="_blank" class="js-modal-tel" data-toggle="modal" data-url="/mobile" data-target="#modal"><i class="iconfont icon-dianhua1 off-text"></i><span class="text-overflow on-text">400-804-1114</span></a></li>
+	</ul>
+	<a class="side-toggle-btn js-trigger-sidebar" href="javascript:;"><i class="iconfont-arr icon-arr-zuoyoujiantouicon10024 off-btn"></i><i class="iconfont-arr icon-arr-zuoyoujiantouicon100241 on-btn"></i></a>
+</div>
+      
+      <div class="edu-header js-edu-header common-header">
+    <!-- <a class="alert alert-base text-center bg-center dis-block" href="/evaluating" target="_blank" role="alert" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/alert.jpg?v3.20.33);">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    <span class="alert-text"> <span class="hidden-xs">互联网的下半场，</span>教育机构如何转型在线教育?
+  </span><span class="dis-inline-block animation-swing-x color-light hidden-xs "> <i class="iconfont icon-shuangjiantouyoubian"></i> &nbsp;&nbsp;</span><button class="btn btn-info evaluating-btn">立即评测</button>
+  </a> -->
+    <a href="javascript:;" class="visible-xs sidebar-btn js-sidebar-btn">
+    <i class="es-icon es-icon-menu"></i>
+  </a>
+  <div class="sidebar-btn visible-xs sidebar-btn-tel">
+    <a class="btn btn-link padding-no" href="tel:400-804-1114"><i class="iconfont icon-dianhua1 color-primary mrs"></i></a>
+  </div>
+
+  <div class="sidebar-shadow"></div>
+  <div class="container clearfix js-header-inner">
+      <div class="navbar-header">
+    <a class="logo" href="http://www.edusoho.com/" title="EduSoho在线学习平台"><img src="/bundles/topxiaweb/v2/img/logo.png?v3.20.4" srcset="/bundles/topxiaweb/v2/img/logo@2x.png?v3.20.4 2x" alt="EduSoho在线学习平台"></a>
+  </div>
+  <div style="display:none;">
+    <div><h1>EduSoho在线教育</h1></div>
+    <div>在线教育学习平台排名，EduSoho开源网络课堂是专业安全的网校系统、在线直播系统、在线学习网站，阔知网络科技在线教育机构团队成员10多年开发经验，其教育培训软件和教育培训系统，一站式在线学习辅导解决方案，按需购买，自由扩容。在线教育平台有哪些？在线学习系统、e-learning系统、lms软件、网校开发、网校建设、网校搭建就选EduSoho。杭州阔知网络科技有限公司是一家专注<strong>在线教育</strong>科技的互联网企业，致力于为企业、个人和教育机构提供包括平台、运营、内容和营销的在线教育整体解决方案。阔知旗下拥有EduSoho网络课堂、ES企培、ES智慧课堂、教育云等产品，截止2017年4月，已服务国内外4万多家企业和教育机构，200多家高等院校，覆盖至美、加、日、英、德、等50多个发达国家。</div>
+  </div>
+
+    <nav class="es-nav">
+      <ul class="nav navbar-nav">
+        <li class="js-sidebar-item active">
+  <a href="/">首页</a>
+</li>
+
+<li class="js-sidebar-item  mul-dropdown ">
+      <a href="/product/system">全部产品<i class="glyphicon glyphicon-menu-down"></i>
+    </a>
+    <div class="mul-dropdown-menu-list mul-dropdown-menu-list-wid-5">
+      <div class="mul-dropdown-menu">
+        <div class="mul-dropdown-title"><i class="iconfont icon-chanpin"></i>网校产品</div>
+        <ul class="mul-dropdown-items">
+          <li class="top-border"><a href="/product/system">
+            <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-xitongshezhi"></i>ES 通用版</p>
+            <p class="mul-dropdown-item-desc text-overflow">教育机构拓展线上教学</p>
+          </a></li>
+          <li class="top-border"><a href="http://ct.edusoho.com/" target="_blank">
+            <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-peixun"></i>ES 企培版</p>
+            <p class="mul-dropdown-item-desc text-overflow">企业内训，合作伙伴培训</p>
+          </a></li><!-- TODO -->
+          <li class="width-last top-border"><a href="/product/colleges">
+            <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-xuexiao5"></i>ES 高校版</p>
+            <p class="mul-dropdown-item-desc text-overflow">智慧学习，高校慕课</p>
+          </a></li>
+          <li><a href="/product/mobile">
+            <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-shouji2"></i>阔知学堂</p>
+            <p class="mul-dropdown-item-desc text-overflow">教育机构的移动网校</p>
+          </a></li>
+          <li class="width-auto"><a href="/product/open-cloud">
+            <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-yun cloud"></i>教育云</p>
+            <p class="mul-dropdown-item-desc text-overflow">直播、点播、短信、邮件</p>
+          </a></li>
+        </ul>
+      </div>
+      <div class="mul-dropdown-menu">
+        <div class="mul-dropdown-title"><i class="iconfont icon-zengzhishouyi"></i>增值服务</div>
+        <ul class="mul-dropdown-items">
+          <li class="top-border">
+            <a href="/product/saas">
+              <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-SaaSyingyong"></i>SaaS 服务</p>
+              <p class="mul-dropdown-item-desc text-overflow">网校搭建、运维全托管</p>
+            </a>
+          </li>
+          <li class="top-border">
+            <a href="/theme_display">
+              <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-dingzhi"></i>网校主题</p>
+              <p class="mul-dropdown-item-desc text-overflow">你的网校装修管家</p>
+            </a>
+          </li>
+          <li class="width-auto top-border">
+            <a href="/product/operation">
+              <p class="mul-dropdown-item-title text-overflow"><i class="iconfont-arr icon-arr-diannao-"></i>运营服务</p>
+              <p class="mul-dropdown-item-desc text-overflow">校长沙龙、运营社群</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+<li class="js-sidebar-item ">
+  <a href="/cases">成功网校</a>
+</li>
+<li class="js-sidebar-item ">
+  <a href="/solutions/saas">服务报价</a>
+</li>
+
+<li class="js-sidebar-item hidden-xs">
+  <a href="/open/show">开源下载</a>
+</li>
+
+<li class="js-sidebar-item hidden-xs">
+  <a href="http://demo.edusoho.com/" target="_blank" class="seo-keyword-status" data-behavior="demo">演示站</a>
+</li>
+
+<li class="js-sidebar-item   visible-xs hidden-sm">
+      <a href="/info">新闻资讯</a>
+                              </li>
+<li class="js-sidebar-item  visible-xs hidden-sm">
+  <a href="/theme_display">网校主题</a>
+</li>
+<li class="js-sidebar-item ">
+      <a href="javascript:;">关于我们<i class="glyphicon glyphicon-menu-down"></i></a>
+    <ul class="submenu aboutus">
+      <li><a href="/abouts/company">公司简介</a></li>
+      <li><a href="/abouts/culture">公司文化</a></li>
+      <li><a href="/info">新闻资讯</a></li>
+      <li><a href="/abouts/connect">联系我们</a></li>
+      <li><a href="/abouts/joinus">加入我们</a></li>
+    </ul>
+  
+              </li>
+      </ul>
+
+      <div class="pull-right">
+        <div class="navbar-en navbar-contact pull-right" >
+          <a class="btn btn-link btn-en-link" href="/en">EN</a>
+        </div>
+                  <div class="navbar-wechat navbar-contact pull-right" >
+            <a class="btn btn-link padding-no">
+              <i class="iconfont icon-weixin color-primary mrs"></i>咨询
+            </a>
+            <div class="navbar-contact-shadowl"></div>
+            <div class="navbar-contact-shadowr"></div>
+            <div class="navbar-contact-hover">
+              <img src="/images/wechat_hover.jpg"  alt="网校平台，开源网校系统，教育云，在线教育平台搭建，职业培训系统">
+            </div>
+          </div>
+                <div class="tel navbar-contact navbar-tel pull-right">
+          <!-- <a href="tel:400-804-1114"></a>400-804-1114</div> -->
+          <span class="padding-no"><i class="iconfont icon-dianhua1 color-primary mrs"></i>400-804-1114</span>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</div>
+      <div class="es-homepage">
+    <input class="seo-engine" type="hidden" value="">
+    <input class="seo-keyword" type="hidden" value="">
+    <div id="swiper-top" class="swiper-container">
+      <div class="swiper-wrapper">
+       <div class="swiper-slide">
+            <section class="bg-banner" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/banner_homepage_1.jpg?v3.20.33);">
+             <div class="banner-hover-content text-center">
+                <div class="banner-hover-header">
+                  <div class="title color-light">教育机构转型=教育+EduSoho </div>
+                </div>
+                <div class="banner-hover-footer">
+                  <a class="btn btn-main btn-primary" href="http://www.edusoho.com/product/system" target="_blank">查看详情</a>
+                  <a class="btn btn-minor btn-reverse-white mlxl hidden-xs disabled js-video-btn" data-toggle="modal" data-url="/video/modal" data-target="#modal"><i class="iconfont icon-bofang mrm"></i>了解 EduSoho</a>
+                </div>
+             </div>
+           </section>
+        </div>
+              <div class="swiper-slide">
+      <a class="dis-block " href=" http://event.edusoho.com/2018conf/" target="_blank" >
+        <section class="bg-banner" style=" background-image:url(/files/default/2018/10-10/1540033a840a816036.jpg);"></section>
+      </a>
+    </div>
+   
+      <div class="swiper-slide">
+      <a class="dis-block " href="http://ct.edusoho.com?ref=gw" target="_blank" >
+        <section class="bg-banner" style=" background-image:url(/files/default/2017/11-06/1346008b093f910528.jpg);"></section>
+      </a>
+    </div>
+   
+   
+      <div class="swiper-slide">
+      <a class="dis-block " href="http://www.edusoho.com/act/engine?fr=guanwang&amp;hmsr=%E5%AE%98%E7%BD%91&amp;hmpl=&amp;hmcu=&amp;hmkw=&amp;hmci=" target="_blank" >
+        <section class="bg-banner" style=" background-image:url(/files/default/2017/10-25/102653d257d0725921.jpg);"></section>
+      </a>
+    </div>
+   
+   
+   
+   
+   
+   
+
+      </div>
+      <div class="swiper-button-prev hidden-xs"><i class="glyphicon glyphicon-menu-left"></i></div>
+      <div class="swiper-button-next hidden-xs"><i class="glyphicon glyphicon-menu-right"></i></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="product-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <a class="product-item text-center bg-center" href="/product/system" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/product_intro_bg_1.png?v3.20.33);">
+              <div class="product-item-header">
+                <img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/product_intro_1.png?v3.20.33" alt='网校系统搭建'>
+              </div>
+              <div class="product-item-body">
+                网校系统
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a class="product-item text-center bg-center" href="/product/colleges" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/product_intro_bg_2.png?v3.20.33);">
+              <div class="product-item-header">
+                <img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/product_intro_2.png?v3.20.33" alt='慕课系统'>
+              </div>
+              <div class="product-item-body">
+                高校慕课
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a class="product-item text-center bg-center" href="http://ct.edusoho.com/" target="_blank" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/product_intro_bg_3.png?v3.20.33);">
+              <div class="product-item-header">
+                <img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/product_intro_3.png?v3.20.33" alt='企业培训系统'>
+              </div>
+              <div class="product-item-body">
+                企业培训
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="homepage-layout  homepage-layout-course bg-gray">
+      <div class="homepage-layout-header text-center">
+        在线教育系统 528项网校功能 让效率翻三倍
+      </div>
+      <div class="homepage-layout-body">
+        <div class="container">
+          <div class="row">
+            <a href="/product/system" class="course-item  active js-course-item" title='人机交互流畅自然，让学员爱上学习'>
+              <div class="course-item-overview text-center">
+                <div class="course-item-header">
+                  <i class="iconfont icon-jiaoshi"></i>
+                  <div class="course-item-title">教</div>
+
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <p>互动视频</p>
+                  <p class="mtl">轻直播</p>
+                  <p class="mtl">智能题库</p>
+                </div>
+              </div>
+              <div class="course-item-detail">
+                <div class="course-item-header">
+                  <i class="iconfont icon-jiaoshi"></i>
+                  <span>教</span>
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <div class="course-intro-group">
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-shipin"></i>
+                        <span>互动视频</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        视频弹题，边学边巩固，让学习更有深度
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-zhibo"></i>
+                        <span>轻直播</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        轻松应对十万人在线；多平台观看，随时随地学；微信宣传，一键分享
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-kaoshi"></i>
+                        <span>智能题库</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        真题测评、智能组卷、学情分析，提高工作效率
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="/product/system" class="course-item  js-course-item" title='528项功能已覆盖3.5万网校需求'>
+              <div class="course-item-overview text-center">
+                <div class="course-item-header">
+                  <i class="iconfont icon-shanxiyidongduankaoqinjiankongzhishikushouye03-copy"></i>
+                  <div class="course-item-title">学</div>
+
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <p>笔记</p>
+                  <p class="mtl">问答</p>
+                  <p class="mtl">学习计划</p>
+                </div>
+              </div>
+              <div class="course-item-detail">
+                <div class="course-item-header">
+                  <i class="iconfont icon-shanxiyidongduankaoqinjiankongzhishikushouye03-copy"></i>
+                  <span>学</span>
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <div class="course-intro-group">
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-biji"></i>
+                        <span>笔记</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        知识共享、内容沉淀、知识提炼
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-wenda"></i>
+                        <span>问答</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        答疑解惑、实时互动
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-wendang"></i>
+                        <span>学习计划</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        系统学习，建构知识体系，学习就像打怪升级
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="/product/system" class="course-item  js-course-item" title='教务ERP管好线上+线下'>
+              <div class="course-item-overview text-center">
+                <div class="course-item-header">
+                  <i class="iconfont icon-guanli"></i>
+                  <div class="course-item-title">管</div>
+
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <p>课程管理</p>
+                  <p class="mtl">学员管理</p>
+                  <p class="mtl">营收管理</p>
+                </div>
+              </div>
+              <div class="course-item-detail">
+                <div class="course-item-header">
+                  <i class="iconfont icon-guanli"></i>
+                  <span>管</span>
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <div class="course-intro-group">
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-error"></i>
+                        <span>课程管理</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        标签化管理，知识结构更科学，让学员轻松找到心仪课程
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-xueyuan-copy"></i>
+                        <span>学员管理</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        看得见的学习进程，全方位跟踪学员学习情况
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-qian1"></i>
+                        <span>营收管理</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        交易额、会员费、续费率，多维度解读营收，订单实时追踪
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="/product/system" class="course-item  js-course-item" title='微信式沟通 让师生交流无距离'>
+              <div class="course-item-overview text-center">
+                <div class="course-item-header">
+                  <i class="iconfont icon-liaotian"></i>
+                  <div class="course-item-title">聊</div>
+
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <p>小组互动</p>
+                  <p class="mtl">语音交流</p>
+                  <p class="mtl">私信沟通</p>
+                </div>
+              </div>
+              <div class="course-item-detail">
+                <div class="course-item-header">
+                  <i class="iconfont icon-liaotian"></i>
+                  <span>聊</span>
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <div class="course-intro-group">
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-hudong1"></i>
+                        <span>小组互动</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        知识共鸣打造学习轻社区，精华内容增强学员荣誉感
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-yuyin"></i>
+                        <span>语音交流</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        学习版的微信朋友圈
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-youxiang"></i>
+                        <span>私信沟通</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        多端同步，高效交流，知识传递更灵活
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="/product/system" class="course-item  js-course-item" title='手把手教您精准营销'>
+              <div class="course-item-overview text-center">
+                <div class="course-item-header">
+                  <i class="iconfont icon-xiaoshou1"></i>
+                  <div class="course-item-title">销</div>
+
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <p>学习卡</p>
+                  <p class="mtl">组合营销</p>
+                  <p class="mtl">会员成长</p>
+                </div>
+              </div>
+              <div class="course-item-detail">
+                <div class="course-item-header">
+                  <i class="iconfont icon-xiaoshou1"></i>
+                  <span>销</span>
+                  <div class="course-item-line"></div>
+                </div>
+                <div class="course-item-body">
+                  <div class="course-intro-group">
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-wxbzhanghu"></i>
+                        <span>学习卡</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        打通线上线下推广方式，营销电子化，环保更高效
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-youhui"></i>
+                        <span>组合营销</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        立体化课程促销策略，目标学员一网打尽
+                      </div>
+                    </div>
+                    <div class="course-intro-item">
+                      <div class="course-intro-item-header">
+                        <i class="iconfont icon-wxbbiaowang"></i>
+                        <span>会员成长</span>
+                      </div>
+                      <div class="course-intro-item-body">
+                        提高学员忠诚度，完课率续费率节节高
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="homepage-layout homepage-layout-cloud">
+      <div class="homepage-layout-header text-center">
+        专为教育而研发的云服务
+      </div>
+      <div class="homepage-layout-body ">
+        <div class="container" style="position: relative;">
+          <div class="row">
+            <div class="swiper-1-wrapper">
+              <div id="swiper-1" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="/product/open-cloud" title='教育云/教育云平台/教育云解决方案'>
+                      <div class="cloud-feature-wrapper">
+                        <div class="cloud-feature text-center">
+                          <div class="cloud-feature-header">
+                            <img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/cloud_safe.png?v3.20.33" alt='安全的教育云服务'>
+                            <div class="icon-text">安全</div>
+                            <div class="icon-text-detail">国际标准保障内容，让防范成为多余</div>
+                          </div>
+                          <div class="cloud-feature-body">
+                            <div class="feature-detail col-md-4">
+                              <div class="feature-detail-header">
+                                <div class="icon-wrapper hidden-xs">
+                                  <i class="iconfont icon-jishuicon07"></i>
+                                </div>
+                                <div class="feature-detail-title">TLP 2.0</div>
+                              </div>
+                              <div class="feature-detail-body">
+                              视频切片、视频指纹、视频加密，安心每一课
+                              </div>
+                            </div>
+                            <div class="feature-detail col-md-4">
+                              <div class="feature-detail-header">
+                                <div class="icon-wrapper hidden-xs">
+                                  <i class="iconfont icon-banji1"></i>
+                                </div>
+                                <div class="feature-detail-title">数据保障</div>
+                              </div>
+                              <div class="feature-detail-body">
+                              多重异地备份、灾难恢复、多重安全加固，安全每一秒
+                              </div>
+                            </div>
+                            <div class="feature-detail col-md-4">
+                              <div class="feature-detail-header">
+                                <div class="icon-wrapper hidden-xs">
+                                  <i class="iconfont icon-shouquanicon"></i>
+                                </div>
+                                <div class="feature-detail-title">网校安全</div>
+                              </div>
+                              <div class="feature-detail-body">
+                              大数据安全预警、IP 访问监控，安全无短板
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="/product/open-cloud" title='教育云/教育云平台/教育云解决方案'>
+                      <div class="cloud-feature-wrapper">
+                        <div class="cloud-feature text-center">
+                          <div class="cloud-feature-header">
+                            <img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/cloud_save.png?v3.20.33" alt='降低60%后期使用成本的教育云'>
+                            <div class="icon-text">省钱</div>
+                            <div class="icon-text-detail">从一年20万直降到1万</div>
+                          </div>
+                          <div class="cloud-feature-body">
+                              <div class="feature-detail col-md-4">
+                                <div class="feature-detail-header">
+                                  <div class="icon-wrapper hidden-xs">
+                                    <i class="iconfont icon-suoxiao1"></i>
+                                  </div>
+                                  <div class="feature-detail-title">动态压缩</div>
+                                </div>
+                                <div class="feature-detail-body">
+                                视频帧率动态压缩，流量费用少一半
+                                </div>
+                              </div>
+                              <div class="feature-detail col-md-4">
+                                <div class="feature-detail-header">
+                                  <div class="icon-wrapper hidden-xs">
+                                    <i class="iconfont icon-huancun"></i>
+                                  </div>
+                                  <div class="feature-detail-title">视频缓存</div>
+                                </div>
+                                <div class="feature-detail-body">
+                                多次观看、一次收费
+                                </div>
+                              </div>
+                              <div class="feature-detail col-md-4">
+                                <div class="feature-detail-header">
+                                  <div class="icon-wrapper hidden-xs">
+                                    <i class="iconfont icon-shipinlei-shiyingpingmu"></i>
+                                  </div>
+                                  <div class="feature-detail-title">流媒体自适应</div>
+                                </div>
+                                <div class="feature-detail-body">
+                                视频分辨率自动匹配终端，优质视听体验
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-button-prev hidden-xs"><i class="iconfont icon-back"></i></div>
+          <div class="swiper-button-next hidden-xs"><i class="iconfont icon-next"></i></div>
+        </div>
+      </div>
+    </section>
+    <section class="swiper-img-container">
+      <div id="swiper-img" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <img class="img-responsive" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/swiper_1.png?v3.20.33" alt='在线教育,在线教育系统,在线教育平台搭建'>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img class="img-responsive" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/swiper_2.jpg?v3.20.33" alt='网校,搭建网校,创建网校,网校系统'>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="homepage-layout homepage-layout-user bg-center" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/user_bg.png?v3.20.33);">
+      <div class="homepage-layout-header text-center">
+        ES实实在在降低了在线教育的门槛
+      </div>
+      <div class="homepage-layout-body">
+        <div class="container" style="position: relative;">
+          <div class="swiper-2-wrapper">
+            <div id="swiper-2" class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="user-card-wrapper">
+                    <div class="user-card text-center ">
+                      <div class="dis-inline-block">
+                        <div class="user-card-text">“学员满意度提升95%，开放大学学习体验互联网化”</div>
+                        <div class="user-card-mes clearfix">
+                          <div class='pull-right'>
+                            <div class="user-card-line pull-left"></div>
+                            <div class="user-card-img-wrapper pull-left">
+                            <img class="user-card-img" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/user_3.png?v3.20.33" alt='EduSoho网校系统客户：广西开放大学'>
+                            </div>
+                            <div class="user-card-name pull-left">广西开放大学</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="user-card-wrapper">
+                    <div class="user-card text-center ">
+                      <div class="dis-inline-block">
+                        <div class="user-card-text">“管理效率提升2倍，用可视化数据快速挖掘内部人才”</div>
+                        <div class="user-card-mes clearfix">
+                          <div class='pull-right'>
+                            <div class="user-card-line pull-left"></div>
+                            <div class="user-card-img-wrapper pull-left">
+                            <img class="user-card-img" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/user_4.png?v3.20.33"alt='EduSoho网校系统客户：金宝贝'>
+                            </div>
+                            <div class="user-card-name pull-left">金宝贝</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev hidden-xs"><i class="iconfont icon-back"></i></div>
+          <div class="swiper-button-next hidden-xs"><i class="iconfont icon-next"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="user-data bg-banner bg-fixed" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/user_data_bg.jpg?v3.20.33);">
+      <div class="user-data-hover text-center">
+        <div class="container">
+          <div class="w-1-of-3 user-data-item">
+            <div class="user-data-num js-num" id="num-1" data-num="60169">60169</div>
+            <div class="user-data-text">家网校</div>
+            <div class="user-data-line"></div>
+          </div>
+          <div class="w-1-of-3 user-data-item">
+            <div class="user-data-num js-num" id="num-2" data-num="133,662,725">133,662,725</div>
+            <div class="user-data-text">学员使用</div>
+            <div class="user-data-line"></div>
+          </div>
+          <div class="w-1-of-3 user-data-item">
+            <div class="user-data-num js-num" id="num-3" data-num="7,287,261">7,287,261</div>
+            <div class="user-data-text">用户互动直播</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-advan text-center">
+      <div class="container">
+        <div class="row">
+          <div class="service-advan-layout">
+            <div class="col-md-6">
+              <div class="service-advan-item">
+                <div class="service-advan-item-header">
+                  <div class="service-advan-item-title">快速迭代</div>
+                </div>
+                <div class="service-advan-item-body">
+                  <i class="iconfont icon-emwdaima"></i>
+                  <p><span>三年</span>时间</p>
+                  <p><span>3.5天</span>更新一版</p>
+                  <p>终身<span>免费升级</span></p>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-6">
+              <div class="service-advan-item">
+                <div class="service-advan-item-header">
+                  <div class="service-advan-item-title">倾听需求</div>
+                </div>
+                <div class="service-advan-item-body">
+                  <i class="iconfont icon-biaoshilei_jianting"></i>
+                  <p><span>60169</span>家网校</p>
+                  <p><span>18,411</span>条需求</p>
+                  <p>专注<span>满足</span>你们的需要</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="homepage-layout homepage-layout-news bg-gray hidden-xs">
+      <div class="homepage-layout-header text-center">
+        最新资讯
+      </div>
+      <div class="container" style="position:relative">
+        <div class="swiper-news-wrapper">
+          <div id="swiper-news" class="swiper-container">
+            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/722/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-29/182010ad2571410867.jpg" alt='EduSoho荣获新浪教育“2018年度互联网+教育科技产品”'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">EduSoho荣获新浪教育“2018年度互联网+教育科技产品”</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/721/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-29/181215f7aa45230335.jpg" alt='【教育政策】艺术类纳入培训机构整改范围'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">【教育政策】艺术类纳入培训机构整改范围</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/720/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-21/1749288d0a31803634.png" alt='教育部公布最新整改进展：一个月整改 79693所培训机构'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">教育部公布最新整改进展：一个月整改 79693所培训机构</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/719/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-21/1005426d08fb972937.jpg" alt='EduSoho联合创始人魏慧虎演讲实录：科技创新，给青年带来了什么？'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">EduSoho联合创始人魏慧虎演讲实录：科技创新，给青年带来了什么？</p>
+                              <p class="news-content">EduSoho联合创始人魏慧虎出席公益网校沙龙并发表主题演讲</p>
+                            </div>
+                          </a>
+                        </div>
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/718/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-19/1447473e503b775633.jpg" alt='教育部印发新时代教师职业行为十项准则'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">教育部印发新时代教师职业行为十项准则</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/717/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-16/175952858fd7214154.jpg" alt='GET2018大会圆满落幕，EduSoho在线教育解决方案获业界专家点赞'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">GET2018大会圆满落幕，EduSoho在线教育解决方案获业界专家点赞</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/716/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-16/0927473d0c4d324979.png" alt='重磅！《中共中央 国务院关于学前教育深化改革规范发展的若干意见》发布'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">重磅！《中共中央 国务院关于学前教育深化改革规范发展的若干意见》发布</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/715/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-14/095959f9efb4357308.jpg" alt='EduSoho受邀参加第75届中国教育装备展示会'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">EduSoho受邀参加第75届中国教育装备展示会</p>
+                              <p class="news-content"></p>
+                            </div>
+                          </a>
+                        </div>
+                                              <div class="col-xs-4">
+                          <a class="product-item" href="/info/714/show">
+                            <div>
+                              <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-14/094816079947904343.png" alt='阔知网络联合创始人魏慧虎：转型在线教育，三大要素不可或缺'>
+                            </div>
+                            <div class="news-info">
+                              <p class="news-title">阔知网络联合创始人魏慧虎：转型在线教育，三大要素不可或缺</p>
+                              <p class="news-content">共话教育现代化，阔知网络受邀出席中国国际远程教育大会</p>
+                            </div>
+                          </a>
+                        </div>
+                                          </div>
+                  </div>
+                </div>
+                          </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-dark hidden-xs"><i class="iconfont icon-back"></i></div>
+        <div class="swiper-button-next swiper-button-dark hidden-xs"><i class="iconfont icon-next"></i></div>
+      </div>
+      <div class="homepage-layout-footer text-center">
+        <a class="homepage-layout-footer-btn btn btn-primary border-no" href="/info">更多资讯 ></a>
+      </div>
+    </section>
+
+    <section class="homepage-layout homepage-layout-news bg-gray visible-xs">
+      <div class="homepage-layout-header text-center">
+        最新资讯
+      </div>
+      <div class="container" style="position:relative">
+        <div class="swiper-news-wrapper">
+          <div id="swiper-news-mobile" class="swiper-container">
+            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/722/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-29/182010ad2571410867.jpg" alt='EduSoho荣获新浪教育“2018年度互联网+教育科技产品”'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">EduSoho荣获新浪教育“2018年度互联网+教育科技产品”</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/721/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-29/181215f7aa45230335.jpg" alt='【教育政策】艺术类纳入培训机构整改范围'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">【教育政策】艺术类纳入培训机构整改范围</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/720/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-21/1749288d0a31803634.png" alt='教育部公布最新整改进展：一个月整改 79693所培训机构'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">教育部公布最新整改进展：一个月整改 79693所培训机构</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/719/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-21/1005426d08fb972937.jpg" alt='EduSoho联合创始人魏慧虎演讲实录：科技创新，给青年带来了什么？'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">EduSoho联合创始人魏慧虎演讲实录：科技创新，给青年带来了什么？</p>
+                            <p class="news-content">EduSoho联合创始人魏慧虎出席公益网校沙龙并发表主题演讲</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/718/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-19/1447473e503b775633.jpg" alt='教育部印发新时代教师职业行为十项准则'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">教育部印发新时代教师职业行为十项准则</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/717/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-16/175952858fd7214154.jpg" alt='GET2018大会圆满落幕，EduSoho在线教育解决方案获业界专家点赞'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">GET2018大会圆满落幕，EduSoho在线教育解决方案获业界专家点赞</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/716/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-16/0927473d0c4d324979.png" alt='重磅！《中共中央 国务院关于学前教育深化改革规范发展的若干意见》发布'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">重磅！《中共中央 国务院关于学前教育深化改革规范发展的若干意见》发布</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/715/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-14/095959f9efb4357308.jpg" alt='EduSoho受邀参加第75届中国教育装备展示会'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">EduSoho受邀参加第75届中国教育装备展示会</p>
+                            <p class="news-content"></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              <div class="swiper-slide">
+                  <div class="product-intro">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <a class="product-item" href="/info/714/show">
+                          <div>
+                            <img src="//edusoho-global.qiqiuyun.net/files/info/2018/11-14/094816079947904343.png" alt='阔知网络联合创始人魏慧虎：转型在线教育，三大要素不可或缺'>
+                          </div>
+                          <div class="news-info">
+                            <p class="news-title">阔知网络联合创始人魏慧虎：转型在线教育，三大要素不可或缺</p>
+                            <p class="news-content">共话教育现代化，阔知网络受邀出席中国国际远程教育大会</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                          </div>
+          </div>
+        </div>
+      </div>
+      <div class="homepage-layout-footer text-center">
+        <a class="homepage-layout-footer-btn btn btn-primary border-no" href="/info">更多资讯 ></a>
+      </div>
+    </section>
+
+    <section class="service-defense text-center" style=" background-image:url(//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/service_defense_bg.jpg?v3.20.33);">
+      <div class="service-defense-text">EduSoho每年为用户防御攻击
+      <span class="service-defense-strong js-num" id="num-4" data-num="251,667">251,667</span> 次</div>
+    </section>
+
+    <section class="homepage-layout homepage-layout-example">
+      <div class="homepage-layout-header text-center">
+        成功案例
+      </div>
+      <div class="homepage-layout-body">
+        <div class="container">
+          <div class="img-box-wrapper clearfix hidden-xs" >
+            <img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/online_example_exchange.jpg?v3.20.33" srcset="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/default/online_example_exchange@2x.jpg?v3.20.33" alt='网校系统搭建' style="width: 100%;border-bottom: 1px solid #e1e1e1;">
+          </div>
+        </div>
+      </div>
+      <div class="homepage-layout-footer text-center">
+        <a class="homepage-layout-footer-btn btn btn-primary border-no js-consult-btn" href="javascript:;">更多案例，欢迎咨询 ></a>
+      </div>
+    </section>
+  </div>
+
+  
+    <div class="es-footer hidden-xs">
+  <div class="container">
+    <ul class="footer-link clearfix">
+      <li>
+        <div class="title">常见问题</div>
+        <ul>
+          <li><a href="http://www.qiqiuyu.com/course/explore/install">产品安装</a></li>
+          <li><a href="http://www.qiqiuyu.com/course/explore/fuction">产品使用</a></li>
+          <li><a href="http://www.edusoho.com/info/586/show">安全应急中心</a></li>
+          <li><a href="/keyword/source">开源文化</a></li>
+        </ul>
+      </li>
+      <li class="product">
+        <div class="title">公司产品</div>
+        <ul>
+          <li><a href="/product/system">通用版</a></li>
+          <li><a href="/product/colleges">高校版</a></li>
+          <li><a href="http://ct.edusoho.com/" target="_blank">企培版</a></li>
+          <li><a href="http://open.edusoho.com/" target="_blank">教育云</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="title">关于我们</div>
+        <ul>
+          <li><a href="/abouts/company">公司简介</a></li>
+          <li><a href="/news/center">阔知新闻</a></li>
+          <li><a href="/abouts/connect">联系我们</a></li>
+          <li><a href="/abouts/joinus">加入我们</a></li>
+        </ul>
+      </li>
+      <li class="contact">
+        <div class="title">联系我们</div>
+        <ul>
+          <li><img style="margin-left:4px" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-address.png?v3.20.33" srcset="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-address@2x.png?v3.20.33 2x"> 公司地址：杭州市滨江区浦沿街道伟业路3号德信AI产业园B栋17层</li>
+          <li><img style="margin-left:4px" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-address.png?v3.20.33" srcset="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-address@2x.png?v3.20.33 2x"> 北京公司：北京市海淀区苏州街18号长远天地大厦B1座1504室</li>
+          <li><img style="margin-left:2px" src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-phone.png?v3.20.33" srcset="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-phone@2x.png?v3.20.33 2x"> 联系电话：400-804-1114</li>
+          <li><a href="mailto:support@edusoho.com"><img src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-email.png?v3.20.33" srcset="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/v2/img/icon-email@2x.png?v3.20.33 2x"> 联系邮箱：support@edusoho.com</a></li>
+        </ul>
+      </li>
+      <span class="footer-link-fill"></span>
+    </ul>
+  </div>
+</div>
+
+<!-- 友情链接 -->
+<div class="es-friend-link hidden-xs">
+  <div class="container">
+    <div class="friend-link">
+      <div class="friend-link-title">友情链接</div>
+      <div class="friend-link-content">
+        <a href="http://www.howzhi.com/" target="_blank">好知网</a>
+<a href="http://www.jiaoping.com/" target="_blank">教育APP</a>
+<a href="http://www.51guoji.com/" target="_blank">国际学校</a>
+<a href="http://www.dyxuexin.com/" target="_blank">东营一对一</a>
+<a href="http://gd.kaoyan365.cn/" target="_blank">广东考研培训机构</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="es-copyright">
+  <div class="container">
+    ©2014-2018 杭州阔知网络科技有限公司-在线教育平台|在线学习平台|网校系统
+ All Rights Reserved. 浙ICP备13006852号-1 <a href="/icp/img"  target="_blank" style="color:#838383">浙B2-20160872</a>
+    <div style="width:300px;margin:0 auto; padding:20px 0;">
+    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802003864&#10;" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" rel="nofollow"><img src="/bundles/topxiaweb/v2/img/reference.png?v3.20.4" style="float:left;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010802003864号</p></a>
+    </div>
+  </div>
+</div>    <script>
+  var app = {};
+  app.basePath = '';
+  app.debug = false;
+  app.version = 'v3.20.33';
+
+  app.config = {"editor_upload_path":"\/kindeditor\/upload"};
+  app.arguments = {};
+      app.controller = 'default/index3';
+      app.scripts = null;
+  var CKEDITOR_BASEPATH = app.basePath + '/libs/ckeditor/4.6.7/';
+  app.uploadUrl = '/file/upload';
+  app.imgCropUrl = '/file/img/crop';
+</script>
+<script src="//edusoho-global.qiqiuyun.net/libs/seajs/2.0.0/sea-debug.js?v3.20.33" data-config="seajs-global-config.js" data-main="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/js/app.js?v3.20.33"></script>
+<script>
+  seajs.use(app.mainScript);
+</script>
+
+  <script src="//edusoho-global.qiqiuyun.net/bundles/topxiaweb/js/html5media.min.js?v3.20.33"></script>
+
+      <!--script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script-->
+    <!--div class="edu-service clearfix  hidden-xs "></div-->
+  
+  <div id="ajax-modal" class="modal"></div>
+  <div id="modal" class="modal">
+      </div>
+  <div id="captcha-modal" class="modal"></div>
+          <div>
+      <button id="zhibtn" class="zhiCustomBtn hidden seo-keyword-status" data-behavior="consult">
+        <p class="zhiCustomBtn-content">
+                        网校系统搭建咨询
+                  </p>
+      </button>
+  </div>
+        <!-- 用来监测恶意点击 -->
+<script src="http://stat.xiaonaodai.com/stat.php?id=8004533" language="JavaScript" type="text/javascript"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-82225107-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- 百度统计商桥 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?85f0e4f99256a62c0afa7cbc130d9ef9";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <!-- 智齿客服 -->
+  <script src="https://www.sobot.com/chat/frame/js/entrance.js?sysNum=64c892fc324a4f6c9f26d88a36084fd5" class="zhiCustomBtn" id="zhichiScript" data-args="manual=true"></script>
+    <!--自动推送-->
+  <script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+<script type="text/javascript" id="promotion-script" src="//event.edusoho.com/promotion/promotion.js?version=2018113014"></script>  </body>
+</html>
